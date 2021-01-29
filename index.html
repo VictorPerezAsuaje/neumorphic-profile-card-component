@@ -5,25 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/logo_victor_perez_asuaje.png">
   <title>Neumorphism Profile card component</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  
 </head>
 <body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Based on the "Profile Card Component" challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded and modified by <a href="#">Victor Pérez Asuaje</a>.
+  <div class="background-top"></div>
+  <div class="content-wrapper">
+    <div class="profile-card">
+      <div class="profile-content">
+        <div class="profile-image">
+          <img src="/images/victor_perez_asuaje_photo.jpg" class="profile">
+        </div>
+        <div class="profile-info">
+          <p class="name">Victor Pérez Asuaje</p>
+          <p class="years-old">24</p>
+        </div>
+        <p class="location">Spain</p>
+        <hr>
+        <div class="stats">
+          <p class="followers"><strong>80K </strong>Followers</p>
+          <p class="likes"><strong>803K </strong>Likes</p>
+          <p class="photos"><strong>1.4K </strong>Photos</p>
+        </div>
+      </div>
+    </div>
   </div>
+  <div class="profile-data">
+    <div class="youtube"></div>
+    <div class="instagram"></div>
+    <div class="facebook"></div>
+    <div class="website"></div>
+  </div>
+  <div class="attribution">
+    Based on the "Profile Card Component" challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded and modified by <a href="#">Victor Pérez Asuaje</a>.
+  </div>
+  <div class="background-bottom"></div>
   <script src="main.js"></script>
 </body>
 </html>

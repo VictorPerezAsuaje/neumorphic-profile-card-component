@@ -1,11 +1,153 @@
 $background-color: #2E3138;
-$primary-color: #18E1CB;
-$darker-primary: #0D9F98;
-$white: #F2F3F9;
+$primary-color: rgb(24, 225, 203);
+$darker-primary: rgb(13, 159, 152);
+$white: #d9dadb;
 
 html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
+body{
+    background-color: $background-color;
+
+    .content-wrapper{
+        margin: auto;
+        width:100%;
+        min-height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-card{
+        min-width: 250px;
+        min-height: 325px;
+        border-radius: 10%;
+        transition: .5s ease-out;
+        position:relative;
+        box-shadow: -5px -7px 10px rgba(255,255,255,0.2), 4px 4px 4px 10px rgba(0,0,0,0.2);
+
+        .profile-content{
+            width: 100%;
+            height: 200px;
+            position: absolute;
+            top:0;
+
+            .profile-image{
+                height: 90px;
+                width: 90px;
+                position: absolute;
+                top:40px;
+                left:75px;
+                border: 10px solid $background-color;
+                border-radius: 50%;
+                box-shadow: -5px -7px 10px rgba(255,255,255,0.2), 4px 4px 4px 10px rgba(0,0,0,0.2);
+                transition: .5s ease-out;
+
+                img{
+                    height: 90px;
+                    width: 90px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    opacity: 1;
+                }
+
+                &:hover{
+                    box-shadow: none;
+                    transition: .5s ease-in;
+                    & img{
+                        transform:scale(0.97);
+                        transition: .5s ease-in;
+                    }
+                }
+            }
+
+            .profile-info{
+                position: absolute;
+                top: 170px;
+                width:100%;
+                height:40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color:$white;
+                text-align: center;
+
+                .name{
+                    font-weight:bold;
+                    margin-right: 1rem;
+                }
+
+                .years-old{
+                    font-weight: 300;
+                    opacity:.9;
+                }
+
+            }
+
+            .location{
+                position: absolute;
+                width:100%;
+                top: 195px;
+                font-size: 0.9rem;
+                display: flex;
+                justify-content: center;
+                color:$white;
+                opacity: 0.7;
+            }
+
+            hr{
+                opacity: 0.1;
+                position: absolute;
+                width: 60%;
+                border-radius: 50%;
+                top: 240px;
+                left:50px;
+            }
+            
+            .stats{
+                display: flex;
+                position: absolute;
+                top: 260px;
+                max-height: 50px;
+                width:80%;
+                justify-content: space-evenly;
+                left:25px;                
+                font-size: 14px;
+                text-align: center;
+                color:$white;
+            }
+
+        }
+        & *{
+            transition: .5s ease-out;
+        }
+
+        &:hover{
+            box-shadow: none;
+            transition: .5s ease-in;
+            & *{
+                transform: scaleX(0.99);
+                transition: .5s ease-in;
+            }
+        }
+    }
+
+    .profile-data{
+        height: 15vh;
+        width: 100%;
+    }
+
+    .attribution{
+        width: 90%;
+        margin: auto;
+        color: $white;
+        text-align: center;
+        a{
+            color: $white; 
+        }
+    }
+}
