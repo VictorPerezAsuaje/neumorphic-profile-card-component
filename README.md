@@ -14,7 +14,7 @@ This is the challenge proposed by FrontEnd Mentors on their website:
 And this was my solution, trying to apply a Neumorphism style and mobile-first approach. Also, I did not use CSS per se, I used SASS.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/65077544/106319496-d20fa800-6271-11eb-8718-fd56bbce516b.gif" width="60%">
+  <img src="https://user-images.githubusercontent.com/65077544/106319496-d20fa800-6271-11eb-8718-fd56bbce516b.gif">
   <img src="https://user-images.githubusercontent.com/65077544/106319491-d20fa800-6271-11eb-8219-dd3de7454b7a.png" height="322px">
 </p>
 
