@@ -26,8 +26,8 @@ body .content-wrapper {
 }
 
 body .profile-card {
-  min-width: 250px;
-  min-height: 325px;
+  width: 250px;
+  height: 325px;
   border-radius: 10%;
   -webkit-transition: .5s ease-out;
   transition: .5s ease-out;
@@ -171,6 +171,85 @@ body .profile-card:hover * {
 body .profile-data {
   height: 15vh;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .profile-data .youtube,
+body .profile-data .instagram,
+body .profile-data .facebook,
+body .profile-data .github {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 3px 2px 4px rgba(0, 0, 0, 0.2), inset -3px -2px 4px rgba(255, 255, 255, 0.1);
+          box-shadow: inset 3px 2px 4px rgba(0, 0, 0, 0.2), inset -3px -2px 4px rgba(255, 255, 255, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+body .profile-data .youtube img,
+body .profile-data .instagram img,
+body .profile-data .facebook img,
+body .profile-data .github img {
+  position: absolute;
+  top: -40px;
+  height: 30px;
+  width: 30px;
+  -webkit-filter: invert(70%);
+          filter: invert(70%);
+}
+
+body .profile-data .youtube .clicked,
+body .profile-data .instagram .clicked,
+body .profile-data .facebook .clicked,
+body .profile-data .github .clicked {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  opacity: 1;
+  background-color: #2E3138;
+  -webkit-box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.2), 1px 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.2), 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+body .profile-data .youtube:hover {
+  background-image: radial-gradient(closest-side, rgba(165, 24, 24, 0.5), rgba(248, 23, 23, 0.9));
+  -webkit-box-shadow: 0px 0px 60px rgba(225, 24, 24, 0.5);
+          box-shadow: 0px 0px 60px rgba(225, 24, 24, 0.5);
+}
+
+body .profile-data .instagram:hover {
+  background-image: radial-gradient(closest-side, rgba(102, 24, 165, 0.3), rgba(196, 31, 246, 0.9));
+  -webkit-box-shadow: 0px 0px 60px rgba(84, 24, 102, 0.5);
+          box-shadow: 0px 0px 60px rgba(84, 24, 102, 0.5);
+}
+
+body .profile-data .facebook:hover {
+  background-image: radial-gradient(closest-side, #0d9f98, #18e1cb);
+  -webkit-box-shadow: 0px 0px 60px rgba(24, 225, 203, 0.5);
+          box-shadow: 0px 0px 60px rgba(24, 225, 203, 0.5);
+}
+
+body .profile-data .github:hover {
+  background-image: radial-gradient(closest-side, rgba(54, 54, 54, 0.3), rgba(221, 221, 221, 0.9));
+  -webkit-box-shadow: 0px 0px 60px rgba(221, 221, 221, 0.5);
+          box-shadow: 0px 0px 60px rgba(221, 221, 221, 0.5);
 }
 
 body .attribution {
@@ -178,6 +257,7 @@ body .attribution {
   margin: auto;
   color: #d9dadb;
   text-align: center;
+  opacity: 0.4;
 }
 
 body .attribution a {
