@@ -1,6 +1,6 @@
 # neumorphic-profile-card-component
 
-This is Neumorphic Profile Card Component is based on the "Profile Card Component" challenge by Frontend Mentor but with a modified design to 'fit' neumorphism (or the closest I got to that feel 😝). However, this may 'work' just because the flat design per se worked kinda nice as well, but just quoting Michal Malewicz, neumorphism is a zombie trend. I just used it for testing and fun.
+This Neumorphic Profile Card Component is based on the "Profile Card Component" challenge by Frontend Mentor but with a modified design to 'fit' neumorphism (or the closest I got to that feel 😝). However, this may 'work' just because the flat design per se worked kinda nice as well, but just quoting Michal Malewicz, neumorphism is a zombie trend. I just used it for testing and fun.
 
 Could I interest you on my website? http://todayilearned.eu/ 😄
 
